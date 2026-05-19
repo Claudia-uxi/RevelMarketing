@@ -1,0 +1,1150 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Revel · Marketing Plan H2 2026</title>
+<link rel="icon" type="image/png" href="brand/revel-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500;1,600&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   REVEL — Local brand fonts
+   ============================================================ */
+@font-face{font-family:"Editors Note";src:url("fonts/EditorsNote-Italic.otf") format("opentype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Editors Note";src:url("fonts/EditorsNote-SemiboldItalic.otf") format("opentype");font-weight:600;font-style:italic;font-display:swap}
+@font-face{font-family:"Editors Note";src:url("fonts/EditorsNote-LightItalic.otf") format("opentype");font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:"Editors Note";src:url("fonts/EditorsNote-BoldItalic.otf") format("opentype");font-weight:700;font-style:italic;font-display:swap}
+@font-face{font-family:"Editors Note";src:url("fonts/EditorsNote-Regular.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Editors Note";src:url("fonts/EditorsNote-Semibold.otf") format("opentype");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Montserrat";src:url("fonts/Montserrat-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Montserrat";src:url("fonts/Montserrat-ExtraBold.ttf") format("truetype");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Montserrat";src:url("fonts/Montserrat-Black.ttf") format("truetype");font-weight:900;font-style:normal;font-display:swap}
+
+/* ============================================================
+   REVEL — Tokens (Visual Identity '25 + revelsaunas.com.au)
+   ============================================================ */
+:root{
+  --revel-white:#FFFFFF;
+  --revel-green:#25B34B;
+  --revel-green-deep:#1F9C40;
+  --revel-forest:#485D4D;
+  --revel-forest-deep:#2F3D34;
+  --revel-sage:#ABB99C;
+  --revel-sage-soft:#D6DCCE;
+  --revel-black:#000000;
+  --revel-charcoal:#1A1A1A;
+  --revel-ash:#6B6B6B;
+  --revel-bone:#F4F1EA;
+  --revel-stone:#E8E4DA;
+
+  --font-display:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  --font-script:"Editors Note","Cormorant Garamond",Georgia,serif;
+  --font-sans:"Montserrat","Helvetica Neue",Arial,sans-serif;
+
+  --gutter:clamp(28px,6vw,128px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--revel-black);color:var(--revel-charcoal);font-family:var(--font-sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+html{scroll-behavior:smooth;scroll-snap-type:y mandatory}
+body{height:100vh;overflow-y:scroll;scroll-snap-type:y mandatory}
+body::-webkit-scrollbar{width:0}
+
+/* ============================================================
+   Section base
+   ============================================================ */
+section{
+  min-height:100vh;width:100%;
+  scroll-snap-align:start;scroll-snap-stop:always;
+  padding:clamp(56px,6vh,96px) var(--gutter);
+  display:flex;flex-direction:column;
+  position:relative;overflow:hidden;
+  background:var(--revel-bone);color:var(--revel-charcoal);
+}
+section.white{background:var(--revel-white)}
+section.bone{background:var(--revel-bone)}
+section.forest{background:var(--revel-forest);color:var(--revel-white)}
+section.forest-deep{background:var(--revel-forest-deep);color:var(--revel-white)}
+section.sage{background:var(--revel-sage-soft);color:var(--revel-charcoal)}
+section.black{background:var(--revel-black);color:var(--revel-white)}
+section.green{background:var(--revel-green);color:var(--revel-black)}
+
+/* ============================================================
+   Type system — the Revel pattern
+   PRIMARY = Montserrat Black UPPERCASE (huge, tight)
+   ACCENT  = Editor's Note Italic Semibold (lowercase, flowing)
+   ============================================================ */
+
+/* Pill-shaped eyebrow badge — the website "REVEL SAUNAS" treatment */
+.badge{
+  display:inline-flex;align-items:center;justify-content:center;
+  font-family:var(--font-sans);font-weight:700;
+  font-size:11px;letter-spacing:.28em;text-transform:uppercase;line-height:1;
+  padding:11px 22px;
+  border:1.5px solid currentColor;border-radius:999px;
+  color:var(--revel-charcoal);
+  white-space:nowrap;
+}
+.forest .badge,.forest-deep .badge,.black .badge{color:var(--revel-white);border-color:var(--revel-white)}
+.green .badge{color:var(--revel-black);border-color:var(--revel-black)}
+
+/* Flat eyebrow (for in-content sub-labels) */
+.eyebrow{
+  font-family:var(--font-sans);font-weight:700;
+  font-size:11px;letter-spacing:.28em;text-transform:uppercase;line-height:1.2;
+  color:var(--revel-ash);
+  display:inline-block;
+}
+.forest .eyebrow,.forest-deep .eyebrow,.black .eyebrow{color:var(--revel-sage)}
+.green .eyebrow{color:var(--revel-forest-deep)}
+.eyebrow.accent{color:var(--revel-green)}
+
+/* DISPLAY — Montserrat Black UPPERCASE, tight tracked */
+.display-xl{
+  font-family:var(--font-display);font-weight:900;
+  font-size:clamp(56px,11vw,168px);
+  line-height:.92;letter-spacing:-0.02em;
+  text-transform:uppercase;
+  text-wrap:balance;
+  margin:0;
+}
+.display-lg{
+  font-family:var(--font-display);font-weight:900;
+  font-size:clamp(44px,7vw,108px);
+  line-height:.94;letter-spacing:-0.018em;
+  text-transform:uppercase;
+  text-wrap:balance;
+  margin:0;
+}
+.display-md{
+  font-family:var(--font-display);font-weight:900;
+  font-size:clamp(32px,5vw,72px);
+  line-height:.98;letter-spacing:-0.015em;
+  text-transform:uppercase;
+  text-wrap:balance;
+  margin:0;
+}
+.display-sm{
+  font-family:var(--font-display);font-weight:800;
+  font-size:clamp(22px,2.6vw,32px);
+  line-height:1.08;letter-spacing:-0.005em;
+  text-transform:uppercase;
+  margin:0;
+}
+
+/* SCRIPT — Editor's Note Italic, the emotional accent word */
+.script{
+  font-family:var(--font-script);
+  font-weight:600;
+  font-style:italic;
+  text-transform:none;
+  letter-spacing:-0.005em;
+  font-size:1em;
+  display:inline-block;
+  vertical-align:baseline;
+}
+.script.bigger{font-size:1.12em}
+/* Accent script colour by section context */
+.green-script{color:var(--revel-green)}
+.sage-script{color:var(--revel-sage)}
+.forest-script{color:var(--revel-forest)}
+
+/* Body */
+.body{font-family:var(--font-sans);font-weight:400;font-size:clamp(15px,1.1vw,17px);line-height:1.65;color:var(--revel-charcoal);max-width:60ch}
+.forest .body,.forest-deep .body,.black .body{color:rgba(255,255,255,.88)}
+.green .body{color:var(--revel-black)}
+.body-lg{font-size:clamp(17px,1.3vw,21px);line-height:1.55}
+
+/* Editorial lede (italic script flowing paragraph) */
+.lede{
+  font-family:var(--font-script);font-weight:400;font-style:italic;
+  font-size:clamp(20px,2vw,28px);line-height:1.4;
+  color:var(--revel-forest);
+  max-width:34ch;
+}
+.forest .lede,.forest-deep .lede,.black .lede{color:var(--revel-sage)}
+.green .lede{color:var(--revel-forest-deep)}
+
+.caption{font-family:var(--font-sans);font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--revel-ash)}
+.forest .caption,.forest-deep .caption,.black .caption{color:rgba(255,255,255,.7)}
+.green .caption{color:var(--revel-forest-deep)}
+
+/* CTA pill button (decorative — matches website Shop Now style) */
+.btn{
+  display:inline-flex;align-items:center;gap:14px;
+  font-family:var(--font-sans);font-weight:700;
+  font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  padding:18px 32px;
+  background:var(--revel-white);color:var(--revel-black);
+  border:none;border-radius:999px;cursor:pointer;
+  text-decoration:none;
+}
+.btn .arrow{display:inline-block;width:14px;height:14px;border-top:2px solid currentColor;border-right:2px solid currentColor;transform:rotate(45deg)}
+.btn.dark{background:var(--revel-black);color:var(--revel-white)}
+.btn.green{background:var(--revel-green);color:var(--revel-black)}
+.btn.outline{background:transparent;color:inherit;border:1.5px solid currentColor}
+
+/* Pair: eyebrow/badge + headline */
+.pair{display:flex;flex-direction:column;gap:32px;margin-bottom:32px}
+.pair > * + *{margin-top:0}
+
+/* ============================================================
+   Cards
+   ============================================================ */
+.card{
+  background:var(--revel-white);
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:4px;
+  padding:32px 30px 28px;
+}
+.bone .card{background:var(--revel-white)}
+.white .card{background:var(--revel-bone)}
+.forest .card,.forest-deep .card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);color:var(--revel-white)}
+.black .card{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);color:var(--revel-white)}
+.green .card{background:rgba(0,0,0,.06);border-color:rgba(0,0,0,.15);color:var(--revel-black)}
+.card .display-sm{margin-bottom:14px}
+.card .body{font-size:14px;line-height:1.6}
+
+/* Chip — flat, square, brand-system style */
+.chip{
+  display:inline-flex;align-items:center;
+  font-family:var(--font-sans);font-weight:700;font-size:10px;
+  letter-spacing:.18em;text-transform:uppercase;line-height:1;
+  padding:7px 11px;border-radius:2px;
+  background:var(--revel-sage-soft);color:var(--revel-forest-deep);
+  margin:0 6px 6px 0;
+}
+.chip.green{background:rgba(37,179,75,.16);color:#1B7D34}
+.chip.dark{background:var(--revel-black);color:var(--revel-white)}
+.forest .chip,.forest-deep .chip,.black .chip{background:rgba(255,255,255,.12);color:var(--revel-white)}
+.forest .chip.green,.forest-deep .chip.green,.black .chip.green{background:var(--revel-green);color:#06210E}
+
+.hr{height:1px;background:rgba(0,0,0,.1);border:0;margin:24px 0}
+.forest .hr,.forest-deep .hr,.black .hr{background:rgba(255,255,255,.15)}
+
+ul.clean{list-style:none;padding:0;margin:0}
+ul.clean li{
+  padding:11px 0 11px 22px;position:relative;font-size:14.5px;line-height:1.55;
+  color:var(--revel-charcoal);
+  border-bottom:1px solid rgba(0,0,0,.07);
+}
+ul.clean li:last-child{border-bottom:none}
+ul.clean li::before{
+  content:"";position:absolute;left:0;top:50%;
+  width:6px;height:6px;border-radius:50%;background:var(--revel-green);
+  transform:translateY(-50%);
+}
+.forest ul.clean li,.forest-deep ul.clean li,.black ul.clean li{color:rgba(255,255,255,.92);border-bottom-color:rgba(255,255,255,.1)}
+.forest ul.clean li::before,.forest-deep ul.clean li::before,.black ul.clean li::before{background:var(--revel-sage)}
+.green ul.clean li{color:var(--revel-black);border-bottom-color:rgba(0,0,0,.15)}
+.green ul.clean li::before{background:var(--revel-black)}
+
+.kv{display:flex;gap:14px;padding:9px 0;font-size:14px;line-height:1.5}
+.kv .k{font-family:var(--font-sans);font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:10.5px;color:var(--revel-green);min-width:96px;padding-top:3px}
+.kv .v{color:var(--revel-charcoal);flex:1}
+.forest .kv .k,.forest-deep .kv .k,.black .kv .k{color:var(--revel-sage)}
+.forest .kv .v,.forest-deep .kv .v,.black .kv .v{color:rgba(255,255,255,.92)}
+
+/* ============================================================
+   Grids
+   ============================================================ */
+.grid{display:grid;gap:24px}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.grid-2-1{grid-template-columns:2fr 1fr}
+@media (max-width:900px){.grid-2,.grid-3,.grid-4,.grid-2-1{grid-template-columns:1fr}}
+.row{display:flex;gap:48px;flex-wrap:wrap}
+.col{flex:1;min-width:280px}
+
+/* ============================================================
+   Chrome
+   ============================================================ */
+.brandmark{
+  position:fixed;top:24px;left:var(--gutter);z-index:30;
+  display:flex;align-items:center;gap:12px;
+  font-family:var(--font-sans);font-weight:800;font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;
+  color:#fff;mix-blend-mode:difference;
+}
+.brandmark .dot{width:7px;height:7px;border-radius:50%;background:var(--revel-green)}
+.scroll-hint{
+  position:fixed;bottom:28px;left:50%;transform:translateX(-50%);z-index:30;
+  font-family:var(--font-sans);font-weight:700;font-size:10px;letter-spacing:.32em;text-transform:uppercase;
+  color:#fff;opacity:.55;mix-blend-mode:difference;
+  animation:bob 2.4s ease-in-out infinite;
+  display:flex;align-items:center;gap:10px;
+}
+.scroll-hint::after{content:"";width:1px;height:18px;background:#fff;display:inline-block}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,6px)}}
+.progressdots{position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:30;display:flex;flex-direction:column;gap:9px;mix-blend-mode:difference}
+.progressdots a{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.4);display:block;transition:all .3s}
+.progressdots a.active{background:var(--revel-green);transform:scale(1.6)}
+@media (max-width:760px){.progressdots{display:none}.brandmark{font-size:9px;letter-spacing:.26em;top:18px}}
+
+.footer-bar{
+  position:absolute;left:var(--gutter);right:var(--gutter);bottom:32px;
+  display:flex;justify-content:space-between;align-items:center;
+  font-family:var(--font-sans);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;
+  color:var(--revel-ash);
+  pointer-events:none;
+}
+.forest .footer-bar,.forest-deep .footer-bar,.black .footer-bar{color:rgba(255,255,255,.45)}
+.green .footer-bar{color:var(--revel-forest-deep)}
+
+/* ============================================================
+   COVER — full-bleed photo + brand overlay (website-style)
+   ============================================================ */
+.cover{
+  background:
+    linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.2) 30%,rgba(0,0,0,.65) 100%),
+    url("brand/img/lifestyle-6.jpg") center/cover no-repeat,
+    var(--revel-black);
+  color:var(--revel-white);
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+.cover .badge{margin-bottom:36px;background:rgba(0,0,0,.35);backdrop-filter:blur(8px)}
+.cover .display-xl{color:var(--revel-white)}
+.cover .script.in-headline{color:var(--revel-white);font-weight:500;font-size:1.05em;line-height:1.05;display:block;margin-top:8px}
+.cover .lockup{display:flex;flex-direction:column;align-items:center;gap:0}
+.cover .meta{position:absolute;bottom:64px;left:0;right:0;display:flex;justify-content:space-between;padding:0 var(--gutter);font-size:11px;letter-spacing:.28em;text-transform:uppercase;font-weight:700;color:rgba(255,255,255,.7);align-items:center}
+.cover .meta img{height:24px;width:auto;opacity:.9;filter:invert(1)}
+.cover .scroll-cue{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:.36em;text-transform:uppercase;color:rgba(255,255,255,.6);font-weight:700;display:flex;align-items:center;gap:10px}
+.cover .scroll-cue::after{content:"";width:1px;height:14px;background:rgba(255,255,255,.6)}
+
+/* ============================================================
+   Calendar at-a-glance
+   ============================================================ */
+.calrow{
+  display:grid;grid-template-columns:120px 1.6fr 1.5fr 2.2fr;gap:24px;
+  padding:24px 0;border-bottom:1px solid rgba(0,0,0,.1);align-items:center;
+}
+.calrow .m{font-family:var(--font-display);font-size:clamp(28px,3.4vw,44px);font-weight:900;color:var(--revel-charcoal);line-height:1;letter-spacing:-0.02em;text-transform:uppercase}
+.calrow .t{font-family:var(--font-sans);font-weight:800;font-size:14px;color:var(--revel-charcoal);letter-spacing:.06em;text-transform:uppercase;line-height:1.3}
+.calrow .h{font-size:13.5px;color:var(--revel-ash);line-height:1.5}
+.calrow .o{font-size:13.5px;color:var(--revel-charcoal);line-height:1.5;font-family:var(--font-script);font-style:italic;font-size:15px}
+.calrow.bf .m{color:var(--revel-green)}
+.calrow.bf .t{color:var(--revel-green-deep)}
+
+/* ============================================================
+   Month sections — left rail + content
+   ============================================================ */
+.month{display:grid;grid-template-columns:300px 1fr;gap:64px;flex:1;align-items:start}
+@media (max-width:980px){.month{grid-template-columns:1fr;gap:32px}}
+.month .rail{position:sticky;top:96px}
+.month .rail .num{
+  font-family:var(--font-display);font-weight:900;
+  font-size:clamp(140px,18vw,220px);line-height:.85;
+  color:var(--revel-charcoal);letter-spacing:-0.04em;
+}
+.forest .month .rail .num,.forest-deep .month .rail .num{color:var(--revel-sage)}
+.green .month .rail .num{color:var(--revel-black)}
+.month .rail .dates{font-family:var(--font-sans);font-weight:800;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--revel-ash);margin-top:18px}
+.forest .month .rail .dates,.forest-deep .month .rail .dates{color:var(--revel-sage)}
+.month .rail .month-label{font-family:var(--font-script);font-style:italic;font-weight:400;font-size:24px;color:var(--revel-forest);margin-top:8px;letter-spacing:-0.01em}
+.forest .month .rail .month-label,.forest-deep .month .rail .month-label{color:var(--revel-sage)}
+
+/* ============================================================
+   Email flow & ads
+   ============================================================ */
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:14px}
+@media (max-width:1100px){.flow{grid-template-columns:repeat(2,1fr)}}
+.flow .e{padding:18px;background:var(--revel-white);border:1px solid rgba(0,0,0,.08);border-radius:4px;font-size:12px;line-height:1.5}
+.bone .flow .e{background:var(--revel-white)}
+.white .flow .e{background:var(--revel-bone)}
+.forest .flow .e,.forest-deep .flow .e,.black .flow .e{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12)}
+.flow .e .n{font-family:var(--font-sans);font-weight:800;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--revel-green);margin-bottom:10px}
+.forest .flow .e .n,.forest-deep .flow .e .n,.black .flow .e .n{color:var(--revel-sage)}
+.flow .e .s{font-family:var(--font-sans);font-weight:800;color:var(--revel-charcoal);font-size:13.5px;line-height:1.25;margin-bottom:8px;letter-spacing:-0.005em}
+.forest .flow .e .s,.forest-deep .flow .e .s,.black .flow .e .s{color:var(--revel-white)}
+.flow .e .h2x{color:var(--revel-ash);font-size:11.5px;line-height:1.5}
+.forest .flow .e .h2x,.forest-deep .flow .e .h2x,.black .flow .e .h2x{color:rgba(255,255,255,.72)}
+
+.ads{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:14px}
+@media (max-width:1100px){.ads{grid-template-columns:1fr}}
+.ad{background:var(--revel-white);border:1px solid rgba(0,0,0,.08);padding:26px;border-radius:4px}
+.bone .ad{background:var(--revel-white)}
+.white .ad{background:var(--revel-bone)}
+.forest .ad,.forest-deep .ad,.black .ad{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12);color:var(--revel-white)}
+.ad .c{
+  font-family:var(--font-sans);font-weight:800;
+  font-size:15px;text-transform:uppercase;letter-spacing:-0.005em;
+  color:var(--revel-charcoal);margin-bottom:8px;line-height:1.2;
+}
+.forest .ad .c,.forest-deep .ad .c,.black .ad .c{color:var(--revel-white)}
+.ad .v{font-family:var(--font-sans);font-weight:700;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--revel-ash);margin-bottom:14px}
+.forest .ad .v,.forest-deep .ad .v,.black .ad .v{color:var(--revel-sage)}
+.ad .p{font-family:var(--font-script);font-style:italic;font-weight:400;font-size:15.5px;color:var(--revel-charcoal);line-height:1.5;margin-bottom:16px}
+.forest .ad .p,.forest-deep .ad .p,.black .ad .p{color:rgba(255,255,255,.92)}
+.ad .hd{font-family:var(--font-sans);font-weight:700;font-size:11px;color:var(--revel-charcoal);border-top:1px solid rgba(0,0,0,.08);padding-top:14px;line-height:1.6;letter-spacing:.05em;text-transform:uppercase}
+.forest .ad .hd,.forest-deep .ad .hd,.black .ad .hd{color:var(--revel-white);border-top-color:rgba(255,255,255,.12)}
+
+/* ============================================================
+   Metric ticker — Montserrat Black numbers (matches brand)
+   ============================================================ */
+.metricrow{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:36px}
+@media (max-width:900px){.metricrow{grid-template-columns:repeat(2,1fr)}}
+.metric .n{
+  font-family:var(--font-display);font-weight:900;
+  font-size:clamp(48px,5.5vw,84px);
+  color:var(--revel-charcoal);line-height:.92;letter-spacing:-0.04em;
+  font-variant-numeric:tabular-nums;
+}
+.forest .metric .n,.forest-deep .metric .n{color:var(--revel-white)}
+.black .metric .n{color:var(--revel-green)}
+.green .metric .n{color:var(--revel-black)}
+.metric .l{font-family:var(--font-sans);font-weight:700;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--revel-ash);margin-top:12px}
+.forest .metric .l,.forest-deep .metric .l,.black .metric .l{color:rgba(255,255,255,.6)}
+
+/* ============================================================
+   BFCM phase strip
+   ============================================================ */
+.phasestrip{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:20px}
+@media (max-width:1000px){.phasestrip{grid-template-columns:repeat(2,1fr)}}
+.phasestrip .ph{
+  padding:28px 24px;border:1px solid rgba(255,255,255,.16);border-right:none;
+  background:rgba(255,255,255,.04);
+}
+.phasestrip .ph:last-child{border-right:1px solid rgba(255,255,255,.16)}
+.phasestrip .ph .num{font-family:var(--font-display);font-weight:900;font-size:64px;color:var(--revel-green);line-height:1;letter-spacing:-0.04em}
+.phasestrip .ph .lbl{font-family:var(--font-sans);font-weight:800;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--revel-white);margin-top:18px}
+.phasestrip .ph .when{font-family:var(--font-script);font-style:italic;font-size:14px;color:var(--revel-sage);margin-top:6px}
+.phasestrip .ph .why{font-size:13px;color:rgba(255,255,255,.85);margin-top:14px;line-height:1.55}
+
+/* ============================================================
+   Image splash sections (between months)
+   ============================================================ */
+.splash{
+  background-position:center;background-size:cover;background-repeat:no-repeat;
+  color:var(--revel-white);
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:0;
+}
+.splash .scrim{
+  flex:1;display:flex;flex-direction:column;justify-content:flex-end;
+  width:100%;padding:clamp(56px,8vh,120px) var(--gutter);
+  background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.55) 70%,rgba(0,0,0,.85) 100%);
+}
+.splash .stack{display:flex;flex-direction:column;gap:20px;max-width:32ch}
+.splash .display-md{color:var(--revel-white)}
+.splash .lede{color:rgba(255,255,255,.88);max-width:38ch}
+
+/* ============================================================
+   Close
+   ============================================================ */
+.close-stage{display:flex;flex-direction:column;flex:1;justify-content:space-between;text-align:center;align-items:center}
+.close-stage .center{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.close-stage .display-lg{color:var(--revel-white);max-width:18ch}
+.close-stage img.signoff{height:42px;width:auto;margin-top:18px;opacity:.95}
+</style>
+</head>
+<body>
+
+<div class="brandmark"><span class="dot"></span><span>Revel · Marketing Plan H2 2026</span></div>
+<div class="scroll-hint">Scroll</div>
+<nav class="progressdots" id="dots"></nav>
+
+<!-- ============================== COVER ============================== -->
+<section class="cover">
+  <div class="lockup">
+    <div class="badge">Revel Saunas · H2 2026</div>
+    <h1 class="display-xl">Live Longer.</h1>
+    <span class="script in-headline">Live better.</span>
+  </div>
+  <div class="meta">
+    <img src="brand/revel-logo-white.svg" alt="Revel">
+    <span>01 July — 31 December 2026</span>
+  </div>
+  <div class="scroll-cue">Scroll to begin</div>
+</section>
+
+<!-- ============================== PREMISE ============================== -->
+<section class="white">
+  <div class="pair">
+    <div><span class="badge">01 · The Premise</span></div>
+    <h2 class="display-lg">H2 is structurally the <span class="script green-script">strongest half</span> of the year.</h2>
+  </div>
+  <div class="row" style="margin-top:8px">
+    <div class="col">
+      <p class="body">This plan sets the direction for Revel Saunas from 1 July through 31 December 2026. It builds on the momentum of H1 — EOFY Early Access, the Marty Fox partnership, the QLD Maroons Recovery Partnership, the Ultimate Wellness Stack — and extends Revel's positioning as Australia's premium home wellness brand into the four highest-leverage moments of the year.</p>
+    </div>
+    <div class="col">
+      <p class="body">Peak winter demand drives July and August. Father's Day anchors early September. Spring opens the lifestyle narrative through October. And Black Friday × Cyber Monday becomes the single largest revenue event of the half — every month before leads into it, every month after recovers with high-margin gifting.</p>
+    </div>
+  </div>
+  <div class="metricrow">
+    <div class="metric"><div class="n">6</div><div class="l">Monthly campaigns</div></div>
+    <div class="metric"><div class="n">3</div><div class="l">Partnership streams</div></div>
+    <div class="metric"><div class="n">10</div><div class="l">BFCM email flow</div></div>
+    <div class="metric"><div class="n">32%</div><div class="l">Of Q4 from November</div></div>
+  </div>
+  <div class="footer-bar"><span>Revel · H2 2026</span><span>01 / 18</span></div>
+</section>
+
+<!-- ============================== ARC ============================== -->
+<section class="bone">
+  <div class="pair">
+    <div><span class="badge">02 · Six-Month Arc</span></div>
+    <h2 class="display-lg">The story, <span class="script forest-script">month by month.</span></h2>
+  </div>
+  <div style="margin-top:8px">
+    <div class="calrow"><div class="m">Jul</div><div><div class="t">New Financial Year, New Ritual</div></div><div class="h">EOFY wrap + winter peak</div><div class="o">25% off EOFY · 0% finance · Helio bundle</div></div>
+    <div class="calrow"><div class="m">Aug</div><div><div class="t">Built for Winter</div></div><div class="h">Father's Day campaign peak</div><div class="o">15% off 1p saunas · $299 accessories pack</div></div>
+    <div class="calrow"><div class="m">Sep</div><div><div class="t">Spring Performance Reset</div></div><div class="h">Maroons finals + spring open</div><div class="o">$500 off bundle · free outdoor cover</div></div>
+    <div class="calrow"><div class="m">Oct</div><div><div class="t">The Home of Wellness</div></div><div class="h">Lifestyle storytelling · BFCM list build</div><div class="o">No site sale — list-only extra 5%</div></div>
+    <div class="calrow bf"><div class="m">Nov</div><div><div class="t">Black Friday × Cyber Monday</div></div><div class="h">Biggest revenue moment of the year</div><div class="o">30% off · free Helio panel on bundles</div></div>
+    <div class="calrow"><div class="m">Dec</div><div><div class="t">The Gift of Better</div></div><div class="h">Gifting · summer ritual · year-close</div><div class="o">Premium install · 15% off summer setup</div></div>
+  </div>
+  <div class="footer-bar"><span>Revel · H2 2026</span><span>02 / 18</span></div>
+</section>
+
+<!-- ============================== PILLARS ============================== -->
+<section class="forest">
+  <div class="pair">
+    <div><span class="badge">03 · The Spine</span></div>
+    <h2 class="display-lg">Four pillars carry <span class="script sage-script">every campaign.</span></h2>
+  </div>
+  <div class="grid grid-4" style="margin-top:8px">
+    <div class="card">
+      <h3 class="display-sm">Lifestyle</h3>
+      <p class="body">Wellness is a daily ritual you build into a beautiful life.</p>
+      <div style="margin-top:18px"><span class="chip">Aura 2p</span><span class="chip">Virta 2p</span><span class="chip">Eclipse</span></div>
+    </div>
+    <div class="card">
+      <h3 class="display-sm">Performance</h3>
+      <p class="body">The recovery routine of elite athletes — backed by the Maroons.</p>
+      <div style="margin-top:18px"><span class="chip green">Glacier Duo</span><span class="chip green">Inflatable Freeze</span><span class="chip green">Kuusi</span></div>
+    </div>
+    <div class="card">
+      <h3 class="display-sm">Home Value</h3>
+      <p class="body">A premium home feature that adds long-term property value.</p>
+      <div style="margin-top:18px"><span class="chip">Nordicwave</span><span class="chip">Eclipse</span><span class="chip">Custom</span></div>
+    </div>
+    <div class="card">
+      <h3 class="display-sm">Ritual</h3>
+      <p class="body">Better together — couples, family, shared recovery.</p>
+      <div style="margin-top:18px"><span class="chip">Aura 2p</span><span class="chip">Helio Red Light</span><span class="chip">Glacier Duo</span></div>
+    </div>
+  </div>
+  <p class="lede" style="margin-top:56px">Supported by AFS — 20+ years in the Australian market.</p>
+  <div class="footer-bar"><span>Revel · H2 2026</span><span>03 / 18</span></div>
+</section>
+
+<!-- ============================== CO-MARKETING ============================== -->
+<section class="white">
+  <div class="pair">
+    <div><span class="badge">04 · Co-Marketing</span></div>
+    <h2 class="display-lg">Three streams. <span class="script green-script">One growth engine.</span></h2>
+  </div>
+  <div class="grid grid-3" style="margin-top:8px">
+    <div class="card">
+      <span class="eyebrow accent">Stream 01</span>
+      <h3 class="display-sm" style="margin-top:10px">Home & Property</h3>
+      <p class="lede" style="font-size:16px;margin:8px 0 18px;max-width:none">Anchors "Home of Wellness."</p>
+      <ul class="clean">
+        <li>Marty Fox — continued monthly shoots</li>
+        <li>Three Birds · Tom Mark Henry · Studio Esteta</li>
+        <li>Metricon Signature · Coral Premier · Porter Davis</li>
+        <li>Airbnb Plus / Luxe host network</li>
+        <li>Domain · realestate.com.au luxury vertical</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="eyebrow accent">Stream 02</span>
+      <h3 class="display-sm" style="margin-top:10px">Wellness Ecosystem</h3>
+      <p class="lede" style="font-size:16px;margin:8px 0 18px;max-width:none">Builds credibility, unlocks list swaps.</p>
+      <ul class="clean">
+        <li>Othership · Wim Hof Method AU</li>
+        <li>Pause Recovery · Nimbus & Co · Hyperice</li>
+        <li>Bare Blends · Macro Mike · Nood</li>
+        <li>Eight Sleep AU · Sheridan Sleep</li>
+        <li>Partner physio + sports-clinic network</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="eyebrow accent">Stream 03</span>
+      <h3 class="display-sm" style="margin-top:10px">New Athlete Tie-Ins</h3>
+      <p class="lede" style="font-size:16px;margin:8px 0 18px;max-width:none">Extends Maroons credibility.</p>
+      <ul class="clean">
+        <li>QLD Maroons — finals + off-season content</li>
+        <li>F45 / CrossFit box affiliate network</li>
+        <li>Rip Curl · Vissla · Sisstrevolution</li>
+        <li>Triathlon AU age-group pros</li>
+        <li>AFL/NRL — explore 2027 club deal</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Revel · H2 2026</span><span>04 / 18</span></div>
+</section>
+
+<!-- ============================== SPLASH — H2 ============================== -->
+<section class="splash" style="background-image:url('brand/img/lifestyle-1.jpg')">
+  <div class="scrim">
+    <div class="stack">
+      <span class="badge" style="background:rgba(0,0,0,.4);backdrop-filter:blur(8px);align-self:flex-start">The Half Ahead</span>
+      <h2 class="display-md">Six months. <span class="script green-script bigger">One ritual.</span></h2>
+      <p class="lede">Built for Australia. Built for the way Australians actually live.</p>
+    </div>
+  </div>
+  <div class="footer-bar"><span style="color:rgba(255,255,255,.6)">Revel · H2 2026</span><span style="color:rgba(255,255,255,.6)">05 / 18</span></div>
+</section>
+
+<!-- ============================== JULY ============================== -->
+<section class="bone">
+  <div class="month">
+    <div class="rail">
+      <div class="num">07</div>
+      <div class="month-label">July</div>
+      <div class="dates">01 · 31 Jul</div>
+    </div>
+    <div>
+      <div class="pair">
+        <div><span class="badge">July Campaign</span></div>
+        <h2 class="display-lg">New Financial Year, <span class="script green-script">new ritual.</span></h2>
+        <p class="lede" style="margin-top:8px">Reset the financial year. Reset the body. Start when it's coldest.</p>
+      </div>
+      <div class="grid grid-2" style="margin-top:24px">
+        <div>
+          <span class="eyebrow accent">Offers</span>
+          <div style="margin-top:8px"></div>
+          <div class="kv"><div class="k">Hero</div><div class="v">EOFY Final 72h (1–3 Jul) · up to 25% off + free Helio panel on bundles</div></div>
+          <div class="kv"><div class="k">Pivot</div><div class="v">From 4 Jul — "New FY, New Ritual" · 0% finance 24 months · free white-glove install</div></div>
+          <span class="eyebrow accent" style="display:block;margin-top:24px">Key Dates</span>
+          <ul class="clean" style="margin-top:8px">
+            <li>1 Jul — EOFY Final 72 Hours launch</li>
+            <li>4 Jul — pivot to "New FY, New Ritual"</li>
+            <li>21 Jul — Father's Day pre-order soft launch</li>
+            <li>28 Jul — Marty Fox winter shoot</li>
+          </ul>
+        </div>
+        <div>
+          <span class="eyebrow accent">Content Pillars</span>
+          <ul class="clean" style="margin-top:8px">
+            <li>EOFY urgency / business deduction storytelling</li>
+            <li>"Why winter is the best time to start sauna"</li>
+            <li>Cozy winter ritual — foggy glass, candlelit lounge</li>
+            <li>Athlete winter training recovery</li>
+          </ul>
+          <span class="eyebrow accent" style="display:block;margin-top:24px">Partnerships</span>
+          <ul class="clean" style="margin-top:8px">
+            <li>Marty Fox — winter shoot 4</li>
+            <li>AFS — co-branded EOFY business creative</li>
+            <li>Othership · Three Birds — open Sep/Oct conversations</li>
+          </ul>
+        </div>
+      </div>
+      <span class="eyebrow accent" style="display:block;margin-top:36px">Email Flow · 5</span>
+      <div class="flow">
+        <div class="e"><div class="n">E1</div><div class="s">72 HOURS. THEN EOFY IS GONE.</div><div class="h2x">Countdown · still tax-deductible · AFS credibility</div></div>
+        <div class="e"><div class="n">E2</div><div class="s">NEW FINANCIAL YEAR. NEW RITUAL.</div><div class="h2x">Reframe — daily-use ROI vs impulse purchases</div></div>
+        <div class="e"><div class="n">E3</div><div class="s">WHY WINTER IS THE BEST TIME</div><div class="h2x">Educational · cold = motivation already at the door</div></div>
+        <div class="e"><div class="n">E4</div><div class="s">INSIDE MARTY FOX'S WINTER RITUAL</div><div class="h2x">Lifestyle · light on offer, heavy on aspiration</div></div>
+        <div class="e"><div class="n">E5</div><div class="s">FATHER'S DAY PRE-ORDERS ARE OPEN</div><div class="h2x">List-only early access · gift-that-lasts framing</div></div>
+      </div>
+      <span class="eyebrow accent" style="display:block;margin-top:30px">Ad Concepts · 3</span>
+      <div class="ads">
+        <div class="ad"><div class="c">EOFY Countdown</div><div class="v">Bold timer · warm interior · contrasting dark</div><div class="p">"EOFY ends midnight Sunday. Up to 25% off our most-used saunas + free Helio Red Light Panel."</div><div class="hd">72 hours left · Last chance: tax-deductible</div></div>
+        <div class="ad"><div class="c">Why Winter</div><div class="v">Foggy window · hand wipes condensation · UGC 6–9s</div><div class="p">"Most people start saunas in summer. They quit by autumn. Start in winter and the cold does half the work."</div><div class="hd">Start when it's cold · Winter is your unfair advantage</div></div>
+        <div class="ad"><div class="c">Marty Fox · Inside My Ritual</div><div class="v">Marty's home · tracking shot · warm grade · 30s + 9s</div><div class="p">"When Marty Fox closes 14-hour days, this is what he comes home to."</div><div class="hd">Inside Marty Fox's home · A home worth coming home to</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Revel · H2 2026</span><span>06 / 18 · July</span></div>
+</section>
+
+<!-- ============================== AUGUST ============================== -->
+<section class="forest">
+  <div class="month">
+    <div class="rail">
+      <div class="num">08</div>
+      <div class="month-label">August</div>
+      <div class="dates">01 · 31 Aug</div>
+    </div>
+    <div>
+      <div class="pair">
+        <div><span class="badge">August Campaign</span></div>
+        <h2 class="display-lg">Built for <span class="script sage-script">winter.</span></h2>
+        <p class="lede" style="margin-top:8px">Built for Dad. The recovery ritual that lasts longer than any gift you've ever wrapped.</p>
+      </div>
+      <div class="grid grid-2" style="margin-top:24px">
+        <div>
+          <span class="eyebrow accent">Offers</span>
+          <div class="kv"><div class="k">Hero</div><div class="v">Father's Day Sale (10–30 Aug) · 15% off 1p saunas + $299 recovery accessories pack</div></div>
+          <div class="kv"><div class="k">Stack</div><div class="v">"Wellness Stack for Dad" · 4-brand bundle (Bare Blends, Othership, Hyperice, Helio) worth $850+</div></div>
+          <span class="eyebrow accent" style="display:block;margin-top:24px">Key Dates</span>
+          <ul class="clean" style="margin-top:8px">
+            <li>4 Aug — "Built for Winter" hero campaign launch</li>
+            <li>10 Aug — Father's Day sale public</li>
+            <li>15 Aug — joint ebook ("The Recovery Stack")</li>
+            <li>20 Aug — last shipping date AU-wide</li>
+            <li>30 Aug — campaign close</li>
+          </ul>
+        </div>
+        <div>
+          <span class="eyebrow accent">Content Pillars</span>
+          <ul class="clean" style="margin-top:8px">
+            <li>Father's Day — emotional, multi-generational</li>
+            <li>"Built for Winter" hero performance recovery</li>
+            <li>Heat + cold + breathwork + sleep stack</li>
+            <li>Trade discount drive — clinics, investors, clubs</li>
+          </ul>
+          <span class="eyebrow accent" style="display:block;margin-top:24px">Partnerships</span>
+          <ul class="clean" style="margin-top:8px">
+            <li>Othership — joint ebook + email swap</li>
+            <li>Bare Blends + Hyperice + Helio — 4-brand bundle</li>
+            <li>F45 / CrossFit pilot — first 5 affiliate codes live</li>
+            <li>QLD Maroons — pre-finals content drop</li>
+          </ul>
+        </div>
+      </div>
+      <span class="eyebrow accent" style="display:block;margin-top:36px">Email Flow · 5</span>
+      <div class="flow">
+        <div class="e"><div class="n">E1</div><div class="s">BUILT FOR THE COLDEST WEEKS</div><div class="h2x">Hero shot · single product · single message</div></div>
+        <div class="e"><div class="n">E2</div><div class="s">YOUR FATHER'S DAY EARLY ACCESS</div><div class="h2x">List 24h head-start · clean price drop</div></div>
+        <div class="e"><div class="n">E3</div><div class="s">FATHER'S DAY — 15% OFF + RECOVERY PACK</div><div class="h2x">15-year-use gift vs typical · 3 dad testimonials</div></div>
+        <div class="e"><div class="n">E4</div><div class="s">THE FULL RECOVERY STACK</div><div class="h2x">Lead-gen ebook · soft product mention</div></div>
+        <div class="e"><div class="n">E5</div><div class="s">ORDER BY THURSDAY FOR FATHER'S DAY</div><div class="h2x">Logistical urgency · state-by-state cut-offs</div></div>
+      </div>
+      <span class="eyebrow accent" style="display:block;margin-top:30px">Ad Concepts · 3</span>
+      <div class="ads">
+        <div class="ad"><div class="c">Dad & Son ritual</div><div class="v">Two generations · sauna · no dialogue · 15s + 30s</div><div class="p">"The Father's Day gift that doesn't end on Sunday. 15 years of better mornings — together."</div><div class="hd">Lasts 15 years · Better than a tie</div></div>
+        <div class="ad"><div class="c">Built for Winter</div><div class="v">Misty coastal · product = only warm light source</div><div class="p">"Built for the coldest weeks of the year. The ritual that turns winter into a season you train through."</div><div class="hd">Built for winter · Where winter feels good</div></div>
+        <div class="ad"><div class="c">4-brand Stack</div><div class="v">Four logos · flat-lay bundle · "$850+ in extras"</div><div class="p">"We teamed up with Othership, Bare Blends and Helio. The full recovery stack — included."</div><div class="hd">4 brands. 1 protocol. · $850 in extras</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Revel · H2 2026</span><span>07 / 18 · August</span></div>
+</section>
+
+<!-- ============================== SPLASH 2 ============================== -->
+<section class="splash" style="background-image:url('brand/img/lifestyle-3.jpg')">
+  <div class="scrim">
+    <div class="stack">
+      <span class="badge" style="background:rgba(0,0,0,.4);backdrop-filter:blur(8px);align-self:flex-start">Spring + Finals</span>
+      <h2 class="display-md">Train through finals. <span class="script green-script bigger">Reset for spring.</span></h2>
+      <p class="lede">September is the bridge — recovery narrative to lifestyle narrative, winter to spring.</p>
+    </div>
+  </div>
+  <div class="footer-bar"><span style="color:rgba(255,255,255,.6)">Revel · H2 2026</span><span style="color:rgba(255,255,255,.6)">08 / 18</span></div>
+</section>
+
+<!-- ============================== SEPTEMBER ============================== -->
+<section class="bone">
+  <div class="month">
+    <div class="rail">
+      <div class="num">09</div>
+      <div class="month-label">September</div>
+      <div class="dates">01 · 30 Sep</div>
+    </div>
+    <div>
+      <div class="pair">
+        <div><span class="badge">September Campaign</span></div>
+        <h2 class="display-lg">Spring <span class="script green-script">performance</span> reset.</h2>
+        <p class="lede" style="margin-top:8px">Train through finals. The recovery protocol the Maroons trust.</p>
+      </div>
+      <div class="grid grid-2" style="margin-top:24px">
+        <div>
+          <span class="eyebrow accent">Offers</span>
+          <div class="kv"><div class="k">Hero</div><div class="v">Spring Reset Bundle (15–30 Sep) · sauna + ice bath · $500 off + free outdoor cover</div></div>
+          <div class="kv"><div class="k">Code</div><div class="v">MAROONS-15 · 15% off Glacier Duo + Inflatable Freeze through 22 Sep</div></div>
+          <span class="eyebrow accent" style="display:block;margin-top:24px">Key Dates</span>
+          <ul class="clean" style="margin-top:8px">
+            <li>6 Sept — Father's Day</li>
+            <li>7–21 Sept — NRL Finals window</li>
+            <li>15 Sept — Spring Reset launch</li>
+            <li>23 Sept — spring equinox · Sydney pop-up</li>
+            <li>28 Sept — BFCM list-build pop-up live</li>
+          </ul>
+        </div>
+        <div>
+          <span class="eyebrow accent">Content Pillars</span>
+          <ul class="clean" style="margin-top:8px">
+            <li>Athlete performance — Maroons finals tie-in</li>
+            <li>Spring outdoor — backyard installs, decks</li>
+            <li>"First 30 days of your spring ritual"</li>
+            <li>Real-customer UGC transformations</li>
+          </ul>
+          <span class="eyebrow accent" style="display:block;margin-top:24px">Partnerships</span>
+          <ul class="clean" style="margin-top:8px">
+            <li>QLD Maroons — finals-week peak</li>
+            <li>Othership — Sydney equinox event</li>
+            <li>F45 / CrossFit — scale to 20 partners</li>
+            <li>Three Birds — confirm October feature</li>
+          </ul>
+        </div>
+      </div>
+      <span class="eyebrow accent" style="display:block;margin-top:36px">Email Flow · 5</span>
+      <div class="flow">
+        <div class="e"><div class="n">E1</div><div class="s">HOW THE MAROONS RECOVER DURING FINALS</div><div class="h2x">Open with stakes · walk the protocol</div></div>
+        <div class="e"><div class="n">E2</div><div class="s">RESET FOR SPRING — $500 OFF BUNDLES</div><div class="h2x">Sauna leaves the routine · joins the lifestyle</div></div>
+        <div class="e"><div class="n">E3</div><div class="s">6 BACKYARDS, TURNED INTO WELLNESS</div><div class="h2x">UGC carousel · before/after</div></div>
+        <div class="e"><div class="n">E4</div><div class="s">YOUR FIRST 30 DAYS OF SPRING</div><div class="h2x">Educational · print-friendly · light offer</div></div>
+        <div class="e"><div class="n">E5</div><div class="s">GET ON THE BFCM LIST</div><div class="h2x">Plain · direct · early access promise</div></div>
+      </div>
+      <span class="eyebrow accent" style="display:block;margin-top:30px">Ad Concepts · 3</span>
+      <div class="ads">
+        <div class="ad"><div class="c">Maroons Finals Protocol</div><div class="v">Recovery room · quick cuts · "OFFICIAL PARTNER"</div><div class="p">"The protocol the Maroons run during finals week. Code MAROONS-15."</div><div class="hd">Recover like a Maroon · Finals-week protocol</div></div>
+        <div class="ad"><div class="c">Backyard Setup</div><div class="v">Drone-down · styled backyard · golden hour</div><div class="p">"Spring just opened the back door. $500 off + free outdoor cover. Free white-glove install."</div><div class="hd">Reset for spring · Your backyard upgraded</div></div>
+        <div class="ad"><div class="c">30-Day Plan</div><div class="v">Text-first · 30-day grid · subtle product shot</div><div class="p">"A simple 30-day plan to start your spring ritual. Free — just open the email."</div><div class="hd">Your 30-day spring ritual</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Revel · H2 2026</span><span>09 / 18 · September</span></div>
+</section>
+
+<!-- ============================== OCTOBER ============================== -->
+<section class="sage">
+  <div class="month">
+    <div class="rail">
+      <div class="num">10</div>
+      <div class="month-label">October</div>
+      <div class="dates">01 · 31 Oct</div>
+    </div>
+    <div>
+      <div class="pair">
+        <div><span class="badge">October Campaign</span></div>
+        <h2 class="display-lg">The <span class="script forest-script">home</span> of wellness.</h2>
+        <p class="lede" style="margin-top:8px">Wellness isn't a product. It's a home. Built around you, every day.</p>
+      </div>
+      <div class="grid grid-2" style="margin-top:24px">
+        <div>
+          <span class="eyebrow" style="color:var(--revel-forest-deep)">Strategic Bet</span>
+          <p class="body" style="margin-top:10px">No sitewide sale. Protect margin for BFCM. Elevate Revel out of "product category" into "home category." Build the largest list Revel has ever held.</p>
+          <span class="eyebrow" style="color:var(--revel-forest-deep);display:block;margin-top:24px">Key Dates</span>
+          <ul class="clean" style="margin-top:8px">
+            <li>1 Oct — Home of Wellness launch · Three Birds feature</li>
+            <li>8 Oct — Tom Mark Henry feature</li>
+            <li>15 Oct — Builder partner feature</li>
+            <li>22 Oct — BFCM teaser drop</li>
+            <li>28 Oct — Tier-1 BFCM list closes</li>
+          </ul>
+        </div>
+        <div>
+          <span class="eyebrow" style="color:var(--revel-forest-deep)">Content Pillars</span>
+          <ul class="clean" style="margin-top:8px">
+            <li>Editorial series — designer + builder partner content</li>
+            <li>BFCM list build — every CTA secondary</li>
+            <li>Property value — investors, hosts, builders</li>
+            <li>Long-form YouTube — 3 install tours</li>
+          </ul>
+          <span class="eyebrow" style="color:var(--revel-forest-deep);display:block;margin-top:24px">Partnerships</span>
+          <ul class="clean" style="margin-top:8px">
+            <li>Three Birds Renovations · Tom Mark Henry</li>
+            <li>Metricon Signature / Coral Premier</li>
+            <li>Domain · realestate.com.au luxury</li>
+            <li>Wim Hof Method AU — open Jan 2027 talk</li>
+          </ul>
+        </div>
+      </div>
+      <span class="eyebrow" style="color:var(--revel-forest-deep);display:block;margin-top:36px">Email Flow · 5</span>
+      <div class="flow">
+        <div class="e"><div class="n">E1</div><div class="s">INSIDE THREE BIRDS' WELLNESS HOME</div><div class="h2x">Magazine-style · almost no product</div></div>
+        <div class="e"><div class="n">E2</div><div class="s">HOW TOM MARK HENRY STYLES A REVEL</div><div class="h2x">Materials · light · placement</div></div>
+        <div class="e"><div class="n">E3</div><div class="s">HOW AIRBNB HOSTS RAISE NIGHTLY RATES</div><div class="h2x">Direct ROI · real numbers</div></div>
+        <div class="e"><div class="n">E4</div><div class="s">LOCK IN YOUR BFCM EARLY ACCESS</div><div class="h2x">24h head start · extra 5%</div></div>
+        <div class="e"><div class="n">E5</div><div class="s">TIER-1 BFCM ACCESS CLOSES FRIDAY</div><div class="h2x">Urgency on the list itself, not the sale</div></div>
+      </div>
+      <span class="eyebrow" style="color:var(--revel-forest-deep);display:block;margin-top:30px">Ad Concepts · 3</span>
+      <div class="ads">
+        <div class="ad"><div class="c">Editorial — Three Birds Home</div><div class="v">Magazine cinematography · slow pans · subtle logo strip</div><div class="p">"Wellness isn't a product. It's a home. We worked with Three Birds on the wellness home of their dreams."</div><div class="hd">Inside the Three Birds wellness home</div></div>
+        <div class="ad"><div class="c">Airbnb Host ROI</div><div class="v">Real host on-camera · text bursts · rate/occupancy lift</div><div class="p">"Adding a Revel sauna lifted our nightly rate by 24% and occupancy by 18%."</div><div class="hd">How Airbnb hosts use Revel · Lift your rate</div></div>
+        <div class="ad"><div class="c">BFCM Teaser</div><div class="v">Stark black · single line · "11.27.26" in corner</div><div class="p">"The biggest sale we've ever run is 4 weeks away. List members get 24h early + extra 5%."</div><div class="hd">Lock in 24h early access · BFCM 2026 starts here</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Revel · H2 2026</span><span>10 / 18 · October</span></div>
+</section>
+
+<!-- ============================== BFCM TITLE ============================== -->
+<section class="black">
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start">
+    <div class="pair">
+      <span class="badge">November · The Main Event</span>
+      <h1 class="display-xl">Black Friday <span class="script green-script bigger">× Cyber Monday.</span></h1>
+    </div>
+    <p class="lede" style="max-width:36ch;margin-top:8px">The single biggest revenue moment of the year. Every month before leads here. Every month after recovers from it.</p>
+  </div>
+  <div class="metricrow">
+    <div class="metric"><div class="n">4</div><div class="l">Phase architecture</div></div>
+    <div class="metric"><div class="n">10</div><div class="l">Email sequence</div></div>
+    <div class="metric"><div class="n">4</div><div class="l">Ad concept rotations</div></div>
+    <div class="metric"><div class="n">5.0×</div><div class="l">Blended ROAS target</div></div>
+  </div>
+  <div class="footer-bar"><span>Revel · H2 2026</span><span>11 / 18 · November</span></div>
+</section>
+
+<!-- ============================== BFCM PHASES ============================== -->
+<section class="forest-deep">
+  <div class="pair">
+    <div><span class="badge">11.1 · Architecture</span></div>
+    <h2 class="display-lg">Four phases. <span class="script sage-script">One choreography.</span></h2>
+  </div>
+  <div class="phasestrip">
+    <div class="ph"><div class="num">01</div><div class="lbl">Tease</div><div class="when">1 — 13 Nov</div><div class="why">Build anticipation, finalise the list. "The biggest sale we've ever run is coming. Get on the list."</div></div>
+    <div class="ph"><div class="num">02</div><div class="lbl">Early Access</div><div class="when">14 — 23 Nov</div><div class="why">Reward the list. Pull forward Black Friday revenue. "Extra 5% off. Locked in. Ends Sunday."</div></div>
+    <div class="ph"><div class="num">03</div><div class="lbl">Black Friday</div><div class="when">24 — 30 Nov</div><div class="why">Public peak. Maximum spend, maximum urgency. "30% off everything. Free Helio panel on bundles."</div></div>
+    <div class="ph"><div class="num">04</div><div class="lbl">Cyber Monday</div><div class="when">30 Nov — 1 Dec</div><div class="why">Cart abandoners, final urgency. "Last call before everything goes back to RRP."</div></div>
+  </div>
+  <div class="grid grid-2" style="margin-top:48px">
+    <div class="card">
+      <span class="eyebrow accent">Hero Offer · Phase 3</span>
+      <p class="body" style="margin-top:10px">30% off everything sitewide. Free Helio Red Light Panel ($899) on every sauna + ice bath bundle. 0% finance for 36 months. Free white-glove install. Free outdoor cover with all outdoor installs.</p>
+    </div>
+    <div class="card">
+      <span class="eyebrow accent">List Reward · Phase 2</span>
+      <p class="body" style="margin-top:10px">List members: 35% off + 24h head start. Locked in from 14 Nov. Tier-1 list (closed 28 Oct) carries the extra 5%. Bundle pricing held until 23 Nov midnight.</p>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Revel · H2 2026</span><span>12 / 18 · BFCM Architecture</span></div>
+</section>
+
+<!-- ============================== BFCM EMAILS ============================== -->
+<section class="forest-deep">
+  <div class="pair">
+    <div><span class="badge">11.2 · Sequence</span></div>
+    <h2 class="display-lg">Ten emails. <span class="script sage-script">Tightly choreographed.</span></h2>
+  </div>
+  <div class="flow" style="grid-template-columns:repeat(5,1fr);margin-top:24px">
+    <div class="e"><div class="n">P1 · E1</div><div class="s">THE BIGGEST SALE IS LOCKED IN</div><div class="h2x">Black email · one line · build anticipation</div></div>
+    <div class="e"><div class="n">P1 · E2</div><div class="s">TIER-1 LIST CLOSES FRIDAY</div><div class="h2x">Urgency on the list itself</div></div>
+    <div class="e"><div class="n">P2 · E3</div><div class="s">YOU'RE IN. YOUR BFCM STARTS NOW.</div><div class="h2x">Personal note → offer table</div></div>
+    <div class="e"><div class="n">P2 · E4</div><div class="s">THE BUNDLE THAT PAYS BACK</div><div class="h2x">Hero shot · ROI math · testimonials</div></div>
+    <div class="e"><div class="n">P2 · E5</div><div class="s">3 HOURS LEFT ON YOUR EXTRA 5%</div><div class="h2x">Plain · direct · live countdown</div></div>
+    <div class="e"><div class="n">P3 · E6</div><div class="s">BLACK FRIDAY — 30% OFF EVERYTHING</div><div class="h2x">Big creative · big copy · hero range</div></div>
+    <div class="e"><div class="n">P3 · E7</div><div class="s">STILL GOING — 30% + FREE HELIO</div><div class="h2x">Bundles · stock-low signals</div></div>
+    <div class="e"><div class="n">P3 · E8</div><div class="s">YOU LEFT THIS BEHIND</div><div class="h2x">Cart abandoner auto-flow</div></div>
+    <div class="e"><div class="n">P4 · E9</div><div class="s">CYBER MONDAY — LAST DAY</div><div class="h2x">Tomorrow → back to RRP</div></div>
+    <div class="e"><div class="n">P4 · E10</div><div class="s">4 HOURS LEFT ON BFCM 2026</div><div class="h2x">Live countdown · stripped-down</div></div>
+  </div>
+  <div class="footer-bar"><span>Revel · H2 2026</span><span>13 / 18 · BFCM Emails</span></div>
+</section>
+
+<!-- ============================== BFCM ADS & AMPLIFICATION ============================== -->
+<section class="black">
+  <div class="pair">
+    <div><span class="badge">11.3 · Creative</span></div>
+    <h2 class="display-lg">Four concepts. <span class="script green-script">Rotated every 5–7 days.</span></h2>
+  </div>
+  <div class="ads" style="margin-top:24px">
+    <div class="ad"><div class="c">P1 — The Tease</div><div class="v">All-black 6s · white text · "BFCM 27.11.26"</div><div class="p">"The biggest sale we've ever run drops 27.11.26. List members are first. Lock in your 24h head start + extra 5%."</div><div class="hd">BFCM 2026 · Get on the list</div></div>
+    <div class="ad"><div class="c">P2 — List Reward</div><div class="v">"You're in" framed cards · clean, premium</div><div class="p">"35% off. 24h head start. Locked in for you until midnight Sunday. Then it's gone."</div><div class="hd">You're in. You're first.</div></div>
+    <div class="ad"><div class="c">P3 — Black Friday Hero</div><div class="v">"30% OFF" bold treatment · hero range · carousel</div><div class="p">"30% off every sauna and ice bath. Free Helio Panel ($899) on every bundle. The biggest BFCM Revel has ever run."</div><div class="hd">30% off everything · Black Friday is live</div></div>
+    <div class="ad"><div class="c">P4 — Cyber Monday Close</div><div class="v">Countdown overlay · single hero · "Tomorrow it's gone"</div><div class="p">"Tomorrow at midnight, every price goes back to RRP. If you've been waiting all year — this is the moment."</div><div class="hd">Cyber Monday — last day</div></div>
+  </div>
+  <div class="grid grid-2" style="margin-top:40px">
+    <div>
+      <span class="eyebrow accent">Partner Amplification</span>
+      <ul class="clean" style="margin-top:10px">
+        <li>Affiliate — 15% / $75 flat during BFCM week</li>
+        <li>Marty Fox — "my BFCM picks" content slot</li>
+        <li>Othership — full list-swap during peak</li>
+        <li>Three Birds + Tom Mark Henry — Stories takeover</li>
+        <li>Domain · realestate.com.au — sponsored editorial</li>
+        <li>QLD Maroons — off-season player content (filmed Oct)</li>
+      </ul>
+    </div>
+    <div>
+      <span class="eyebrow accent">BFCM KPIs</span>
+      <div class="metricrow" style="margin-top:10px;grid-template-columns:repeat(2,1fr);gap:24px">
+        <div class="metric"><div class="n">32%</div><div class="l">Of Q4 from Nov</div></div>
+        <div class="metric"><div class="n">7%</div><div class="l">List conv rate</div></div>
+        <div class="metric"><div class="n">+12%</div><div class="l">AOV vs Oct</div></div>
+        <div class="metric"><div class="n">8%</div><div class="l">Affiliate share</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Revel · H2 2026</span><span>14 / 18 · BFCM Creative</span></div>
+</section>
+
+<!-- ============================== DECEMBER ============================== -->
+<section class="bone">
+  <div class="month">
+    <div class="rail">
+      <div class="num">12</div>
+      <div class="month-label">December</div>
+      <div class="dates">01 · 31 Dec</div>
+    </div>
+    <div>
+      <div class="pair">
+        <div><span class="badge">December Campaign</span></div>
+        <h2 class="display-lg">The <span class="script green-script">gift</span> of better.</h2>
+        <p class="lede" style="margin-top:8px">Give the gift that lasts longer than Christmas. Start the ritual that lasts longer than New Year's resolutions.</p>
+      </div>
+      <div class="grid grid-2" style="margin-top:24px">
+        <div>
+          <span class="eyebrow accent">Offers</span>
+          <div class="kv"><div class="k">Hero</div><div class="v">Christmas gifting (1–22 Dec) · no sitewide sale · free white-glove install + free Helio panel on premium installs · gift cards $500 / $1000 / $2000</div></div>
+          <div class="kv"><div class="k">Pivot</div><div class="v">Boxing Day–NYE (26–31 Dec) · "Summer Ritual" · 15% off Inflatable Freeze + Helio</div></div>
+          <span class="eyebrow accent" style="display:block;margin-top:24px">Key Dates</span>
+          <ul class="clean" style="margin-top:8px">
+            <li>1 Dec — Christmas gifting launch</li>
+            <li>8 Dec — final install cut-off · AU metro</li>
+            <li>15 Dec — gift card last-call</li>
+            <li>26 Dec — "Summer Ritual" opens</li>
+            <li>31 Dec — NYE · year-in-review · 2027 teaser</li>
+          </ul>
+        </div>
+        <div>
+          <span class="eyebrow accent">Content Pillars</span>
+          <ul class="clean" style="margin-top:8px">
+            <li>Premium gifting — gift cards · white-glove install</li>
+            <li>"Ritual over Resolution" (weeks 3–4)</li>
+            <li>NYE — start the year already installed</li>
+            <li>Year-in-review · customer thank-you</li>
+          </ul>
+          <span class="eyebrow accent" style="display:block;margin-top:24px">Partnerships</span>
+          <ul class="clean" style="margin-top:8px">
+            <li>Marty Fox — "my Christmas gift to myself"</li>
+            <li>Three Birds — Christmas-styled install Reel</li>
+            <li>Bare Blends + Helio — gift-card cross-promo</li>
+            <li>Micro-gifting · 20 AU wellness creators</li>
+          </ul>
+        </div>
+      </div>
+      <span class="eyebrow accent" style="display:block;margin-top:36px">Email Flow · 5</span>
+      <div class="flow">
+        <div class="e"><div class="n">E1</div><div class="s">THE GIFT THAT LASTS LONGER THAN CHRISTMAS</div><div class="h2x">"Most last 14 days. Ours last 14 years."</div></div>
+        <div class="e"><div class="n">E2</div><div class="s">NOT SURE WHICH SAUNA? GIVE THE CHOICE.</div><div class="h2x">Gift cards $500 / $1000 / $2000</div></div>
+        <div class="e"><div class="n">E3</div><div class="s">ORDER FRIDAY FOR INSTALL BEFORE CHRISTMAS</div><div class="h2x">State-by-state cut-offs · reassuring</div></div>
+        <div class="e"><div class="n">E4</div><div class="s">SKIP THE RESOLUTION. BUILD THE RITUAL.</div><div class="h2x">Behavioural science · habit you install</div></div>
+        <div class="e"><div class="n">E5</div><div class="s">START 2027 ALREADY INSTALLED</div><div class="h2x">Forward-looking · quietly confident</div></div>
+      </div>
+      <span class="eyebrow accent" style="display:block;margin-top:30px">Ad Concepts · 3</span>
+      <div class="ads">
+        <div class="ad"><div class="c">Gift that lasts</div><div class="v">Hands unwrapping → same hands in sauna 6 months later</div><div class="p">"Most gifts last 14 days. Ours lasts 14 years. Used every single morning until 2041."</div><div class="hd">The gift that lasts 15 years</div></div>
+        <div class="ad"><div class="c">Gift Card</div><div class="v">Premium gift-card unboxing · embossed logo · clean</div><div class="p">"Not sure which sauna they'd pick? Give them the choice. $500, $1000, $2000."</div><div class="hd">Give them the choice · A gift card for ritual</div></div>
+        <div class="ad"><div class="c">Ritual over Resolution</div><div class="v">Voice-over essay · morning B-roll · type-only end card</div><div class="p">"92% of resolutions fail by February. Rituals don't. A ritual is something you've already installed."</div><div class="hd">Ritual over resolution · Start 2027 installed</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Revel · H2 2026</span><span>15 / 18 · December</span></div>
+</section>
+
+<!-- ============================== CHANNELS ============================== -->
+<section class="white">
+  <div class="pair">
+    <div><span class="badge">12 · Channel Notes</span></div>
+    <h2 class="display-lg">How each channel is <span class="script green-script">treated</span> across H2.</h2>
+  </div>
+  <div class="grid grid-3" style="margin-top:8px">
+    <div class="card">
+      <h3 class="display-sm">Meta + Instagram</h3>
+      <ul class="clean">
+        <li>Always-on prospecting + retargeting · Nov budget ×3–4</li>
+        <li>Reels-first · refresh every 5–7 days during BFCM</li>
+        <li>3 concepts × 4 headlines · kill bottom 50% after 72h</li>
+        <li>Retargeting: 7d cart · 30d view · 90d engage</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="display-sm">Google</h3>
+      <ul class="clean">
+        <li>Brand search always-on · capped budget</li>
+        <li>Non-brand scaled Sep–Nov for BFCM intent</li>
+        <li>YouTube pre-roll · Home of Wellness series Oct–Nov</li>
+        <li>Shopping feed refreshed quarterly</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="display-sm">Email + SMS</h3>
+      <ul class="clean">
+        <li>4–5 emails / month · BFCM gets 10</li>
+        <li>Always-on flows: welcome, browse, cart, post-purchase</li>
+        <li>Segments: tier-1 (30d), tier-2 (90d), reactivation (180d+)</li>
+        <li>SMS for top 10% engaged · send-time optimised</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="display-sm">Organic Social</h3>
+      <ul class="clean">
+        <li>IG 5×/wk · TikTok 4×/wk · YouTube 1×/wk · LinkedIn 2×/wk</li>
+        <li>Weekly: 2 lifestyle, 2 edu, 1 UGC, 1 product, 1 partner</li>
+        <li>UGC drive · $50 credit + repost · target 30+/mo</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="display-sm">SEO + Content</h3>
+      <ul class="clean">
+        <li>2 long-form posts/mo · BFCM gets 4 (Buyer's Guide + comparisons)</li>
+        <li>Programmatic state pages live by 1 Oct</li>
+        <li>AI search optimisation · citable summary blocks</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="display-sm">Partner / Affiliate</h3>
+      <ul class="clean">
+        <li>5 partners Jul · 20+ Sep · 40+ for BFCM</li>
+        <li>10% standard · 15% BFCM · $75 flat on hero</li>
+        <li>Monthly partner newsletter + dashboard</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Revel · H2 2026</span><span>16 / 18 · Channels</span></div>
+</section>
+
+<!-- ============================== RISKS ============================== -->
+<section class="bone">
+  <div class="pair">
+    <div><span class="badge">13 · Risks & Dependencies</span></div>
+    <h2 class="display-lg">What we need to <span class="script green-script">close out.</span></h2>
+  </div>
+  <div class="grid grid-2" style="margin-top:8px">
+    <div class="card">
+      <h3 class="display-sm">Operational</h3>
+      <ul class="clean">
+        <li>Stock — confirm hero product stock for BFCM by 30 Sept</li>
+        <li>Shipping cut-offs — AU metro + regional Christmas dates by 15 Nov</li>
+        <li>Partner contracts — Marty Fox extension + new builder/designer paperwork by 1 Aug</li>
+        <li>Affiliate program — landing pages + unique codes live by 1 Aug</li>
+        <li>Creative pipeline — Oct shoot booked by 1 Sept</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="display-sm">Open Questions</h3>
+      <ul class="clean">
+        <li>Boxing Day sale or hold margin? — current: hold</li>
+        <li>Final BFCM affiliate commission split — current: 15% / $75 flat</li>
+        <li>BFCM headline discount floor — current: 30% (do not exceed)</li>
+        <li>Single hero product for BFCM or full range? — current: full range, bundle hero</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bar"><span>Revel · H2 2026</span><span>17 / 18 · Risks</span></div>
+</section>
+
+<!-- ============================== CLOSE ============================== -->
+<section class="green" style="background:var(--revel-green)">
+  <div class="close-stage">
+    <div style="padding-top:24px"><span class="badge">In Closing</span></div>
+    <div class="center">
+      <h1 class="display-lg" style="text-align:center;max-width:22ch;color:var(--revel-black)">Revel is no longer a sauna company. <span class="script forest-script bigger">It's a way Australians live.</span></h1>
+      <p class="body body-lg" style="margin-top:32px;max-width:54ch;text-align:center;color:var(--revel-forest-deep)">Every month in this plan compounds a single belief — wellness is something you build into a home, not a product you sit beside it. By 31 December, the brand should feel bigger than every sale that built it.</p>
+    </div>
+    <div>
+      <img src="brand/revel-logo-black.svg" alt="Revel" class="signoff">
+      <div class="caption" style="margin-top:14px;color:var(--revel-forest-deep);letter-spacing:.36em">Live Longer · Live Better</div>
+    </div>
+  </div>
+</section>
+
+<script>
+const sections=document.querySelectorAll('section');
+const dots=document.getElementById('dots');
+sections.forEach((s,i)=>{const a=document.createElement('a');a.href='#';a.addEventListener('click',e=>{e.preventDefault();s.scrollIntoView({behavior:'smooth'})});dots.appendChild(a);});
+const dotEls=[...dots.children];
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(en=>{
+    if(en.isIntersecting){
+      const i=[...sections].indexOf(en.target);
+      dotEls.forEach((d,j)=>d.classList.toggle('active',j===i));
+    }
+  });
+},{threshold:0.6});
+sections.forEach(s=>io.observe(s));
+let hidden=false;
+window.addEventListener('scroll',()=>{if(!hidden && window.scrollY>40){document.querySelector('.scroll-hint').style.opacity=0;hidden=true;}},{passive:true});
+</script>
+</body>
+</html>
